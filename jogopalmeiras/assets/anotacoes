@@ -1,0 +1,37 @@
+'''
+1. Palmeiras, o time ganhador, teve o trofeu roubado por alguem com grande capacidade logística sem deixar rastros.
+2. Se o Flamengo estava no museu de titulos no dia do roubo, então o São Paulo roubou o Palmeiras.
+3. Se o Atletico não estava na sala de conferencia no dia do roubo, então o Flamengo não estava no museu de titulos.
+4. O Flamengo  ou o Santos estavam no museu de titulos no dia do roubo.
+5. Se o Aletico  estava na sala de conferencia no dia do roubo, então o Grêmio roubou o trofeu do Palmeiras deixando vestigios na cena do crime.
+6. Se o Santos estava no museu de titulos no dia do roubo, então o Corithians roubou o Trofeu do Palmeiras.
+7. O Grêmio ou o Vasco roubaram o trofeu deixando vestigios na cena do crime.
+
+A. O Flamengo estava no museu de titulos no dia do roubo
+B. O Santos estava no museu de titulos no dia do roubo.
+C. O Atletico estava na sala de conferencia no dia do roubo.
+D. O Gremio roubou o trofeu deixando vestigios na cena do crime.
+E. O São Paulo roubou o trofeu do Palmeiras.
+F. O Corithians roubou o trofeu do Palmeiras.
+G. O Vasco roubou o trofeu deixando vestigios na cena do crime.
+
+
+(dedução lógica = ~D)
+(dedução lógica = ~G)
+
+1. A => E - Hipotese
+2. ~C => ~A - Hipotese
+3. A v B - Hipotese
+4. C => D - Hipotese
+5. B => F - Hipotese
+6. D v G - Hipotese
+
+
+7. ~D - (dedução logica)
+8. ~G - (dedução logica)
+9. G  - silogismo disjuntivo(6, 7)
+10.~C - modus tolens(2, 7)
+11.~A - modus tolens(3, 8)
+12. B - silogismo disjuntivo(1,12)
+13. F - modus ponens(5,13)
+'''
